@@ -1,0 +1,120 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: linear-gradient(to left,black,black,gray);
+	font-family: cooper black;
+}
+.menu_Bar
+{
+	background:linear-gradient(to bottom,black,gray);
+	text-align: center;
+	border:1px dotted white;
+}
+.menu_Bar ul
+{
+	display: inline-flex;
+	list-style: none; 
+}
+.menu_Bar ul li
+{
+	width: 120px;
+	margin: 15px;
+	padding: 15px;
+}
+.menu_Bar ul li a
+{
+    text-decoration: none;
+	color: white;
+}
+.active, .menu_Bar ul li:hover
+{
+   background: yellow;
+   border-radius: 25px;
+}
+.menu_Bar .fa
+{
+	margin-right: 8px;
+}
+.sub_menu_1
+{
+	display: none;
+}
+.menu_Bar ul li:hover .sub_menu_1
+{
+	display: block;
+	position: absolute;
+	background: linear-gradient(to bottom,gray,black);
+	margin-top: 18px;
+	margin-left: -15px;
+	border: 1px solid white;
+	border-radius: 25px 0 25px 0;
+}
+.menu_Bar ul li:hover .sub_menu_1 ul
+{
+	display: block;
+	margin: 10px;
+}
+.menu_Bar ul li:hover .sub_menu_1 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px solid white;
+	background: transparent;
+	text-align: left;
+}
+.menu_Bar ul li:hover .sub_menu_1 ul li:hover
+{
+	color: red;
+}
+.menu_Bar ul li:hover .sub_menu_1 ul li a:hover
+{
+	color: yellow;
+}
+form
+{
+	position: absolute;
+	left: 55px;
+	top: 160px;
+	align-items: center;
+	display: inline-grid; 
+}
+input[type='text'],input[type='password']
+{
+	text-align: center;
+	height: 170px;
+	padding: 20px;
+}
+button
+{
+	position: absolute;
+	height: 80px;
+	width: 214px;
+	background: rgb(10%,80%,0%);
+}
+h1
+{
+	position: absolute;
+	top: 300px;
+	left: 500px;
+	text-align: center;
+	font-family: ruby;
+	font-size: 40px;
+	color: white;
+	letter-spacing: 7px;
+	border-bottom: 1px dotted white;
+}
+p
+{
+	position: absolute;
+	color: white;
+	font-family: lucida;
+	top: 380px;
+	left: 500px;
+	font-size: 15px;
+	letter-spacing: 3px;
+	text-align: center;
+}
